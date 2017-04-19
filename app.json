@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/ticket/ticket",
+    "pages/hotshow/hotshow",
+    "pages/beshow/beshow",
+    "pages/ticket/selectcity/selectcity",
+    "pages/ticket/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "看电影",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#777777",
+    "selectedColor": "#f00",
+    "list": [{
+      "pagePath": "pages/ticket/ticket",
+      "text": "正在售票",
+      "iconPath": "iconPath",
+      "selectedIconPath": "selectedIconPath"
+    },
+    {
+      "pagePath": "pages/hotshow/hotshow",
+      "text": "热映",
+      "iconPath": "iconPath",
+      "selectedIconPath": "selectedIconPath"
+    },
+    {
+      "pagePath": "pages/beshow/beshow",
+      "text": "即将上映",
+      "iconPath": "iconPath",
+      "selectedIconPath": "selectedIconPath"
+    }]
+  }
+}

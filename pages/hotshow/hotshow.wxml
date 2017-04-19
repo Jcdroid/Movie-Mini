@@ -1,0 +1,7 @@
+<!--pages/hotshow/hotshow.wxml-->
+<block wx:for="{{list}}" wx:key="*this">
+<navigator url="../ticket/detail/detail?movieId={{item.id}}" class="item">
+    <image src="{{item.img}}" class="image"></image>
+    <text class="title">{{item.tCn}}</text>
+</navigator>
+</block>

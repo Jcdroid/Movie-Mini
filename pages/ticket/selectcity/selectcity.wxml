@@ -1,0 +1,6 @@
+<!--pages/ticket/selectcity/selectcity.wxml-->
+<block wx:for="{{citys}}" wx:key="*this">
+    <navigator class="navigator" bindtap="bindItemTap" data-city="{{item}}">
+        <text class="title">{{item.n}}</text>
+    </navigator>
+</block>

@@ -1,0 +1,7 @@
+<!--pages/beshow/beshow.wxml-->
+<block wx:for="{{list}}" wx:key="*this">
+<navigator url="../ticket/detail/detail?movieId={{item.id}}" class="item">
+    <image src="{{item.image}}" class="image"></image>
+    <text class="title">{{item.title}}</text>
+</navigator>
+</block>

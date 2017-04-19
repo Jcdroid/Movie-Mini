@@ -1,0 +1,12 @@
+<!--pages/ticket/ticket.wxml-->
+<view class="">
+    <navigator class="navigator" url="selectcity/selectcity">
+        <text class="selectcity">{{selectCity}}</text>
+    </navigator>
+    <block wx:for="{{list}}" wx:key="*this">
+    <navigator url="detail/detail?movieId={{item.movieId}}" class="item" bindtap="bindTap">
+        <image src="{{item.img}}" class="image"></image>
+        <text class="title">{{item.titleCn}}</text>
+    </navigator>
+    </block>
+</view>

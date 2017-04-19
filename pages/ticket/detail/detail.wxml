@@ -1,0 +1,14 @@
+<!--pages/ticket/detail/detail.wxml-->
+<view class="container">
+    <view class="header">
+        <image class="image" src="{{basic.img}}" bindtap="bindPlay"></image>
+        <view class="container">
+            <text class="text1" wx:if="{basic.overallRating > -1}}">{{basic.name}}（{{basic.overallRating}}分）</text>
+            <text class="text2">{{basic.nameEn}}</text>
+            <text class="text2">{{basic.releaseArea}} / {{basic.mins}}</text>
+            <text class="text2">{{basic.releaseDate}}</text>
+        </view>
+    </view>
+    <text class="story">{{basic.story}}</text>
+    <video class="video" src="{{video.url}}" ></video>
+</view>

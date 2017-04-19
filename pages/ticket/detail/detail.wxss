@@ -1,0 +1,29 @@
+/* pages/ticket/detail/detail.wxss */
+.image{
+    width: 200rpx;
+    height: 300rpx;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.text1{
+
+}
+
+.text2{
+  font-size: 12px;
+  padding-top: 10rpx;
+}
+
+.story{
+  font-size: 14px;
+  padding-top: 20rpx;
+}
+
+.video{
+  width: 100%;
+  padding: 20rpx 0;
+}
