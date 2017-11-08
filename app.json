@@ -17,21 +17,21 @@
     "selectedColor": "#f00",
     "list": [{
       "pagePath": "pages/ticket/ticket",
-      "text": "正在售票",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
+      "text": "售票中",
+      "iconPath": "",
+      "selectedIconPath": ""
     },
     {
       "pagePath": "pages/hotshow/hotshow",
       "text": "热映",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
+      "iconPath": "",
+      "selectedIconPath": ""
     },
     {
       "pagePath": "pages/beshow/beshow",
       "text": "即将上映",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
+      "iconPath": "",
+      "selectedIconPath": ""
     }]
   }
 }
