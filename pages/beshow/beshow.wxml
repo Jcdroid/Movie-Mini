@@ -1,7 +1,14 @@
 <!--pages/beshow/beshow.wxml-->
 <block wx:for="{{list}}" wx:key="*this">
-<navigator url="../ticket/detail/detail?movieId={{item.id}}" class="item">
+  <navigator url="../ticket/detail/detail?movieId={{item.id}}" class="item">
     <image src="{{item.image}}" class="image"></image>
-    <text class="title">{{item.title}}</text>
-</navigator>
+    <view class='container'>
+      <text class="title">{{item.title}}</text>
+      <text class="text" style="padding-top: 16rpx;">导演：{{item.director}}</text>
+      <text class="text">主演：{{item.actor1}}、{{item.actor2}}</text>
+      <text class="text">类型：{{item.type}}</text>
+      <text class="text">想看的人：{{item.wantedCount}}人</text>
+      <text class="text">上映日期：{{item.rYear}}/{{item.rMonth}}/{{item.rDay}}</text>
+    </view>
+  </navigator>
 </block>

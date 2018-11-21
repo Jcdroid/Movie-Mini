@@ -4,9 +4,18 @@
         <text class="selectcity">{{selectCity}}</text>
     </navigator>
     <block wx:for="{{list}}" wx:key="*this">
-    <navigator url="detail/detail?movieId={{item.movieId}}" class="item" bindtap="bindTap">
-        <image src="{{item.img}}" class="image"></image>
-        <text class="title">{{item.titleCn}}</text>
+    <navigator class="item" url="detail/detail?movieId={{item.movieId}}" bindtap="bindTap">
+        <image class="image" src="{{item.img}}"></image>
+        <view class="container">
+          <text class="title" wx:if="{{item.ratingFinal === -1}}">{{item.titleCn}}（无）</text>
+          <text class="title" wx:else>{{item.titleCn}}（{{item.ratingFinal}}分）</text>
+          <text class="text" style="padding-top: 16rpx;">英文名：{{item.titleEn}}</text>
+          <text class="text">导演：{{item.directorName}}</text>
+          <text class="text">主演：{{item.actorName1}}、{{item.actorName2}}</text>
+          <text class="text">类型：{{item.type}}</text>
+          <text class="text">想看的人：{{item.wantedCount}}人</text>
+          <text class="text">上映日期：{{item.rYear}}/{{item.rMonth}}/{{item.rDay}}</text>
+        </view>
     </navigator>
     </block>
 </view>

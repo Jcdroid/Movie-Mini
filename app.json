@@ -9,7 +9,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "看电影",
+    "navigationBarTitleText": "看影讯",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -18,20 +18,20 @@
     "list": [{
       "pagePath": "pages/ticket/ticket",
       "text": "售票中",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "iconPath":"res/ic_tab_ticket_normal.png",
+      "selectedIconPath": "res/ic_tab_ticket_selected.png"
     },
     {
       "pagePath": "pages/hotshow/hotshow",
       "text": "热映",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "iconPath": "res/ic_tab_hot_normal.png",
+      "selectedIconPath": "res/ic_tab_hot_selected.png"
     },
     {
       "pagePath": "pages/beshow/beshow",
       "text": "即将上映",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "iconPath": "res/ic_tab_will_normal.png",
+      "selectedIconPath": "res/ic_tab_will_selected.png"
     }]
   }
 }

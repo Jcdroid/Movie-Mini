@@ -1,14 +1,18 @@
 <!--pages/ticket/detail/detail.wxml-->
 <view class="container">
-    <view class="header">
-        <image class="image" src="{{basic.img}}" bindtap="bindPlay"></image>
-        <view class="container">
-            <text class="text1" wx:if="{basic.overallRating > -1}}">{{basic.name}}（{{basic.overallRating}}分）</text>
-            <text class="text2">{{basic.nameEn}}</text>
-            <text class="text2">{{basic.releaseArea}} / {{basic.mins}}</text>
-            <text class="text2">{{basic.releaseDate}}</text>
-        </view>
+  <view class="header">
+    <image class="image" src="{{basic.img}}" bindtap="bindPlay"></image>
+    <view class="container">
+      <text class="title" wx:if="{{basic.overallRating === -1}}">{{basic.name}}（无）</text>
+      <text class="title" wx:else>{{basic.name}}（{{basic.overallRating}}分）</text>
+      <text class="text">英文名：{{basic.nameEn}}</text>
+      <text class="text">导演：{{basic.director.name}}</text>
+      <text class="text">主演：{{basic.actors[0].name}}、{{basic.actors[1].name}}、{{basic.actors[2].name}}等</text>
+      <text class="text">类型：{{basic.type}}</text>
+      <text class="text">时长：{{basic.mins}}</text>
+      <text class="text">上映日期：{{basic.releaseDate}}</text>
     </view>
-    <text class="story">{{basic.story}}</text>
-    <video class="video" src="{{video.url}}" ></video>
+  </view>
+  <text class="story">\t\t{{basic.story}}</text>
+  <video class="video" src="{{video.url}}" ></video>
 </view>

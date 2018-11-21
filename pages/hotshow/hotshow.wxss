@@ -1,19 +1,1 @@
 /* pages/hotshow/hotshow.wxss */
-.item{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-content: center;
-    padding: 20rpx;
-}
-
-.image{
-    width: 200rpx;
-    height: 300rpx;
-}
-
-.title{
-    align-content: center;
-    text-align: center;
-    padding: 20rpx;
-}
