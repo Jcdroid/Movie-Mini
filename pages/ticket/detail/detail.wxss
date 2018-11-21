@@ -5,6 +5,8 @@
   align-items: stretch;
   align-content: center;
   padding-left: 16rpx;
+  padding-right: 16rpx;
+  padding-bottom: 16rpx;
 }
 
 .header{
