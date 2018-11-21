@@ -1,8 +1,8 @@
 <!--pages/ticket/detail/detail.wxml-->
-<view class="container">
+<view class="content">
   <view class="header">
     <image class="image" src="{{basic.img}}" bindtap="bindPlay"></image>
-    <view class="container">
+    <view class="content">
       <text class="title" wx:if="{{basic.overallRating === -1}}">{{basic.name}}（无）</text>
       <text class="title" wx:else>{{basic.name}}（{{basic.overallRating}}分）</text>
       <text class="text">英文名：{{basic.nameEn}}</text>

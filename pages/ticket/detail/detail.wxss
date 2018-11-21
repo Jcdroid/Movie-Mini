@@ -1,4 +1,12 @@
 /* pages/ticket/detail/detail.wxss */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  padding-left: 16rpx;
+}
+
 .header{
     display: flex;
     flex-direction: row;
